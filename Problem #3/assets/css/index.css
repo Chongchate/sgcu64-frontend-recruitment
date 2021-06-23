@@ -27,6 +27,15 @@ body {
 
 .register-card {
   /* USER CODE Begin: Style the card */
+  flex: 1;
+  margin: 30px 0 88px 0px;
+  padding: 36px 45px 69px 45px;
+  max-width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -1px 1px 5px 0.5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
 
   /* USER CODE End: Style the card */
 }
@@ -45,11 +54,18 @@ body {
 #register-form {
   margin-top: 28px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
   /* USER CODE Begin: Style the input field */
-
+  border: none;
+  border-bottom: solid 1px gray;
+  margin-bottom: 30px;
+  line-height: 2;
+  width: 100%;
   /* USER CODE END: Style the input field */
 }
 
@@ -64,19 +80,25 @@ input:focus {
 
 button {
   /* USER CODE Begin: Style the button */
-
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: var(--chula-pink-dark);
+  color: white;
+  line-height: 2;
+  transition: all 0.5s;
   /* USER CODE END: Style the button */
 }
 
 button:hover {
-  background: var(--chula-pink-dark);
+  background: #e66c9b;
 }
 
 .kite,
 .cloud,
 .footer {
   /* USER CODE Begin: Hide it */
-
+  display: none;
   /* USER CODE END: Hide it  */
 }
 
@@ -87,7 +109,7 @@ button:hover {
 }
 
 /* USER CODE Begin: Manage screen width */
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 1300px) {
   /* USER CODE END: Manage screen width */
   body {
     background: url("../img/bg-desktop.svg");
@@ -107,48 +129,73 @@ button:hover {
     flex: 1;
     margin: 86px 0 88px 0px;
     padding: 36px 58px 69px 59px;
-    max-width: 377px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1px 1px 5px 0.5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
   }
 
   .kite {
     /* USER CODE Begin: Control kite */
-
+    display: block;
+    height: 450px;
+    width: 450px;
+    position: relative;
+    z-index: 1;
+    top: 150px;
+    left: 200px;
     /* USER CODE END: Control kite */
   }
 
   .cloud {
     /* USER CODE Begin: Style cloud */
-
+    display: block;
+    height: 150px;
+    width: 350px;
+    position: absolute;
     /* USER CODE END: Style kite */
   }
 
   .cloud.cloud1 {
     /* USER CODE Begin: Control cloud1 */
+    position: absolute;
+    top: 150px;
+    left: 50px;
 
     /* USER CODE END: Control cloud1 */
   }
 
   .cloud.cloud2 {
     /* USER CODE Begin: Control cloud2 */
-
+    top: 400px;
+    left: 400px;
     /* USER CODE END: Control cloud2 */
   }
 
   .cloud.cloud3 {
     /* USER CODE Begin: Control cloud3*/
-
+    top: 600px;
+    left: 50px;
     /* USER CODE END: Control cloud3 */
   }
 
   input {
     /* USER CODE Begin: Style the input field */
-
+    border: none;
+    border-bottom: solid 1px gray;
+    margin-bottom: 30px;
+    width: 100%;
     /* USER CODE END: Style the input field */
   }
 
   #register-form {
     margin-top: 40px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer {
