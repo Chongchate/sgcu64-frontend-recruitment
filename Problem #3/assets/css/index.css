@@ -61,8 +61,8 @@ body {
 
 input {
   /* USER CODE Begin: Style the input field */
-  border: none;
-  border-bottom: solid 1px gray;
+  border-radius: 5px;
+  border: solid 1px #acacac;
   margin-bottom: 30px;
   line-height: 2;
   width: 100%;
@@ -70,7 +70,7 @@ input {
 }
 
 input:hover {
-  border-color: #acacac;
+  border-color: #888888;
 }
 
 input:focus {
@@ -92,6 +92,7 @@ button {
 
 button:hover {
   background: #e66c9b;
+  cursor: pointer;
 }
 
 .kite,
@@ -183,8 +184,7 @@ button:hover {
 
   input {
     /* USER CODE Begin: Style the input field */
-    border: none;
-    border-bottom: solid 1px gray;
+
     margin-bottom: 30px;
     width: 100%;
     /* USER CODE END: Style the input field */
